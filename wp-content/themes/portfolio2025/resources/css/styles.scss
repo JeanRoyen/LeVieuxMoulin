@@ -2,25 +2,3 @@
 @use 'utils/sro';
 @use 'utils/reset';
 
-// Content
-@use 'content/top-nav';
-@use "content/footer";
-@use 'content/carousel';
-@use 'content/project';
-@use 'content/form';
-@use 'content/filter';
-@use 'content/parcours';
-@use 'content/gallery';
-@use 'content/links';
-
-
-// General
-@use 'general/front-page';
-@use 'general/general';
-@use 'general/about';
-@use 'general/single-project';
-
-// Settings
-@use 'settings/margin';
-
-

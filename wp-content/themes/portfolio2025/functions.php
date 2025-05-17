@@ -1,8 +1,5 @@
 <?php
 
-// Charger la configuration de champs d'ACF :
-include_once('acf.php');
-
 // Activer la session PHP
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -44,15 +41,15 @@ function enqueue_assets_from_vite_manifest(): void
         $manifest = json_decode(file_get_contents($manifestPath), true);
 
         // Vérifier et ajouter le fichier JavaScript
-        if (isset($manifest['wp-content/themes/portfolio2025/resources/js/main.js'])) {
-            wp_enqueue_script('portfolio2025',
-                get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio2025/resources/js/main.js']['file']), [], null, true);
+        if (isset($manifest['wp-content/themes/LeVieuxMoulin/resources/js/main.js'])) {
+            wp_enqueue_script('LeVieuxMoulin',
+                get_theme_file_uri('public/' . $manifest['wp-content/themes/LeVieuxMoulin/resources/js/main.js']['file']), [], null, true);
         }
 
         // Vérifier et ajouter le fichier CSS
-        if (isset($manifest['wp-content/themes/portfolio2025/resources/css/styles.scss'])) {
-            wp_enqueue_style('portfolio2025',
-                get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio2025/resources/css/styles.scss']['file']));
+        if (isset($manifest['wp-content/themes/LeVieuxMoulin/resources/css/styles.scss'])) {
+            wp_enqueue_style('LeVieuxMoulin',
+                get_theme_file_uri('public/' . $manifest['wp-content/themes/LeVieuxMoulin/resources/css/styles.scss']['file']));
         }
     }
 }
@@ -67,12 +64,12 @@ function dw_asset(string $file): string
     if (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
 
-        if (isset($manifest['wp-content/themes/portfolio2025/resources/js/main.js']) && $file === 'js') {
-            return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio2025/resources/js/main.js']['file']);
+        if (isset($manifest['wp-content/themes/LeVieuxMoulin/resources/js/main.js']) && $file === 'js') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/LeVieuxMoulin/resources/js/main.js']['file']);
         }
 
-        if (isset($manifest['wp-content/themes/portfolio2025/resources/css/styles.scss']) && $file === 'css') {
-            return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio2025/resources/css/styles.scss']['file']);
+        if (isset($manifest['wp-content/themes/LeVieuxMoulin/resources/css/styles.scss']) && $file === 'css') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/LeVieuxMoulin/resources/css/styles.scss']['file']);
         }
     }
 
@@ -82,38 +79,11 @@ function dw_asset(string $file): string
 // Activer l'utilisation d'images "de couverture" sur les post_types customs.
 add_theme_support('post-thumbnails', ['recipe', 'trip']);
 
-// Enregistrer de nouveaux "types de contenus" qui seront stockés dans la table
-// "wp_posts", avec un identifiant de type spécifique dans la colonne "post_type":
-
-register_post_type('project', [
-    'label' => 'Projets',
-    'description' => 'Mes projets',
-    'public' => true,
-    'menu_position' => 7,
-    'menu_icon' => 'dashicons-media-document',
-    'rewrite' => [
-        'slug' => 'projects',
-    ],
-    'supports' => ['title'],
-]);
-
-register_taxonomy('project_type', 'project', [
-    'labels' => [
-        'name' => 'Types de projets',
-        'singular_name' => 'Type de projet',
-    ],
-    'hierarchical' => true,
-    'public' => true,
-    'show_ui' => true,
-    'rewrite' => ['slug' => 'type'],
-]);
 
 
 // Enregistrer les menus de navigation en fonction de l'endroit où ils sont exploités :
 
 register_nav_menu('header', 'Le menu de navigation principal en haut de la page.');
-register_nav_menu('main', 'Menu principal dans le main');
-register_nav_menu('main_sub', 'Menu secondaire dans le main');
 register_nav_menu('footer', 'Le menu de navigation de fin de page.');
 
 // Créer une nouvelle fonction qui permet de retourner un menu de navigation formaté en un

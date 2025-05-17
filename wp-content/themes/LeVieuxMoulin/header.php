@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
-    <meta name="description" content="Découvrez le portfolio de Jean Royen, développeur web junior passionné, étudiant à la HEPL de Seraing, spécialisé en sites modernes et responsives.">
+    <meta name="description" content="« Le Vieux Moulin » est un service résidentiel général (SRG) agréé et subventionné par le secteur de l'aide à la jeunesse de la fédération Wallonie-Bruxelles.">
+    <meta name="keywords" content="SRG, jeunes, jeunesse, Service résidentiel général">
     <link rel="stylesheet" type="text/css" href="<?= dw_asset('css'); ?>">
     <script src="<?= dw_asset('js') ?>" defer></script>
 </head>

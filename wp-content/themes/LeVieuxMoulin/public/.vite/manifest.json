@@ -4,10 +4,6 @@
     "src": "wp-content/themes/LeVieuxMoulin/resources/css/styles.scss",
     "isEntry": true
   },
-  "wp-content/themes/LeVieuxMoulin/resources/icons/bg-liege.svg": {
-    "file": "assets/bg-liege-CiFAVBVz.svg",
-    "src": "wp-content/themes/LeVieuxMoulin/resources/icons/bg-liege.svg"
-  },
   "wp-content/themes/LeVieuxMoulin/resources/js/main.js": {
     "file": "assets/js-BeJLHbrH.js",
     "name": "js",

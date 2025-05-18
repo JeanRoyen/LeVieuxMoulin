@@ -12,6 +12,8 @@
         include('text/text.php');
     elseif (get_row_layout() === 'parcours'):
         include('parcours/parcours.php');
+    elseif (get_row_layout() === 'cards'):
+        include('cards/cards.php');
     endif;
   endwhile;
 endif;

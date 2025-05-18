@@ -1,5 +1,6 @@
 <?php $headline = get_sub_field('headline') ?>
 <?php $text = get_sub_field('text') ?>
+<?php $link = get_sub_field('link') ?>
 <?php $class = get_sub_field('class') ?>
 
 <div class="div_container_section">

@@ -17,12 +17,24 @@
         <?php foreach ($experiences as $ex): ?>
             <article class="card">
                 <h3 class="div_project_h2"><?= esc_html($ex['title']) ?></h3>
-                <div>
-                    <?= $ex['description'] ?>
-                </div>
+
+                <?php if (!empty($ex['description'])): ?>
+                    <div>
+                        <?= $ex['description']; ?>
+                    </div>
+                <?php endif; ?>
+
                 <div class="card_img">
                     <?= responsive_image($ex['image'], ['classes' => 'card__img']) ?>
                 </div>
+
+                <?php if (!empty($ex['cta'])): ?>
+                    <a href="<?= esc_url($ex['cta']['url']) ?>"
+                       class="card__cta"
+                       target="<?= esc_attr($ex['cta']['target']) ?>">
+                        <?= esc_html($ex['cta']['title']) ?>
+                    </a>
+                <?php endif; ?>
             </article>
         <?php endforeach; ?>
     </div>

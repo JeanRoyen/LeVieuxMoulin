@@ -17,6 +17,9 @@
         <?php foreach ($experiences as $ex): ?>
             <article class="card">
                 <h3 class="div_project_h2"><?= esc_html($ex['title']) ?></h3>
+                <div>
+                    <?= $ex['description'] ?>
+                </div>
                 <div class="card_img">
                     <?= responsive_image($ex['image'], ['classes' => 'card__img']) ?>
                 </div>

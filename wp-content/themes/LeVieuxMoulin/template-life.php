@@ -1,8 +1,8 @@
-<?php /* Template Name: Template À propos */ ?>
+<?php /* Template Name: Template La vie au foyer */ ?>
 
 <?php get_header(); ?>
 
-    <div class="about">
+    <div class="life">
         <?php include('templates/content/flexible.php') ?>
         <section class="where">
             <h2>Où sommes-nous ? </h2>
@@ -13,5 +13,6 @@
             </div>
         </section>
     </div>
+
 
 <?php get_footer(); ?>

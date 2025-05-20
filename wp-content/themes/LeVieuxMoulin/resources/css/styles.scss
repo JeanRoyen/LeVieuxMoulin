@@ -1,6 +1,10 @@
 // Utils
 @use 'utils/sro';
+@use 'utils/reset';
 
 // Content
 @use 'content/top-nav';
 @use 'content/footer';
+
+// General
+@use 'general/home';

@@ -31,11 +31,13 @@
             </div>
         <?php endif; ?>
         <?php if (!empty($cta)): ?>
-            <a class="text-media__content-link"
-               href="<?= $cta['url'] ?>"
-               title="<?= $cta['title'] ?>">
-                <?= $cta['title'] ?>
-            </a>
+            <div class="text-media__content-cta">
+                <a class="text-media__content-link"
+                   href="<?= $cta['url'] ?>"
+                   title="<?= $cta['title'] ?>">
+                    <?= $cta['title'] ?>
+                </a>
+            </div>
         <?php endif; ?>
     </div>
     <?php if (!empty($image)): ?>

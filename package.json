@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "watch": "chokidar './wp-content/themes/LeVieuxMoulin/resources/js/app/**/*.js' './wp-content/themes/LeVieuxMoulin/resources/css/**/*' -c 'vite build'",
+    "watch": "chokidar './wp-content/themes/LeVieuxMoulin/resources/js/app/**/*' './wp-content/themes/LeVieuxMoulin/resources/css/**/*' -c 'vite build'",
     "serve": "browser-sync start --proxy 'http://LeVieuxMoulin.test' --files 'wp-content/themes/LeVieuxMoulin/public/**/*' --no-https --port 8000"
   },
   "keywords": [],

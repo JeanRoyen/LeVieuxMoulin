@@ -19,21 +19,23 @@
                 <h3 class="div_project_h2"><?= esc_html($ex['title']) ?></h3>
 
                 <?php if (!empty($ex['description'])): ?>
-                    <div>
+                    <div class="card__description">
                         <?= $ex['description']; ?>
                     </div>
                 <?php endif; ?>
-
+                <?php if (!empty($ex['image'])): ?>
                 <div class="card_img">
                     <?= responsive_image($ex['image'], ['classes' => 'card__img']) ?>
                 </div>
-
+                <?php endif; ?>
                 <?php if (!empty($ex['cta'])): ?>
+                <div class="card__cta">
                     <a href="<?= esc_url($ex['cta']['url']) ?>"
-                       class="card__cta"
+                       class="card__cta-link"
                        target="<?= esc_attr($ex['cta']['target']) ?>">
                         <?= esc_html($ex['cta']['title']) ?>
                     </a>
+                </div>
                 <?php endif; ?>
             </article>
         <?php endforeach; ?>

@@ -1,0 +1,35 @@
+@import '../settings/variables';
+
+.about {
+ line-height: 1.5rem;
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .cards__container:first-of-type {
+    padding-top: 8rem;
+  }
+
+  .where {
+    background-color: $bg-light-green;
+
+    h2 {
+      padding-top: 2rem;
+    }
+
+    .where__map {
+      margin: auto;
+      width: 80%;
+      padding-bottom: 3rem;
+
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}

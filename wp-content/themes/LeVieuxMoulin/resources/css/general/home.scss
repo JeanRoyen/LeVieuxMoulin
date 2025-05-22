@@ -5,7 +5,7 @@
 
   // === Section container dernier ===
   .section_container:last-of-type {
-    padding: 2rem 1.5rem 1.5rem 2rem;
+    padding: 2rem 1.5rem 3rem 5rem;
     position: relative;
     background-color: $bg-tern-green;
     display: flex;
@@ -30,6 +30,9 @@
     .text-media__position--right {
       img {
         border-radius: $radius;
+        width: 100%;
+        height: auto;
+        min-width: 400px;
       }
     }
 
@@ -50,6 +53,7 @@
   // === TITRE (juste première section) ===
   .section_container:first-of-type {
     padding-top: 8rem;
+    padding-bottom: 3rem;
     background-color: $bg-light-green;
 
     .text-media__content-container {
@@ -84,16 +88,14 @@
 
     picture,
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
       display: block;
-    }
-
-    .text-media__image {
-      width: 100%;
-      height: auto;
       border-radius: $radius;
-      display: block;
+      max-width: 1400px;
+      min-width: 400px;
+      margin: auto;
+
     }
   }
 

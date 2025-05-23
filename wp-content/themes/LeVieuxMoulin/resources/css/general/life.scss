@@ -117,7 +117,7 @@
   }
 
   .section_container_gallery {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0 4rem 0;
 
     .div_title_img {
       font-size: 1.5rem;
@@ -147,7 +147,7 @@
 @media (min-width: 768px) {
   .life {
     .section_container:first-of-type {
-      padding: 8rem 3rem 4rem 3rem;
+      padding: 2rem 3rem 4rem 3rem;
     }
 
     .nav {

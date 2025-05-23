@@ -86,6 +86,7 @@ add_theme_support('post-thumbnails', ['recipe', 'trip']);
 register_nav_menu('header', 'Le menu de navigation principal en haut de la page.');
 register_nav_menu('footer', 'Le menu de navigation de fin de page.');
 register_nav_menu('footer_sm', 'Le menu de navigation de fin de page pour les réseaux sociaux.');
+register_nav_menu('middle_life', 'Le menu de navigation de changement de maison.');
 
 // Créer une nouvelle fonction qui permet de retourner un menu de navigation formaté en un
 // tableau d'objets afin de pouvoir l'afficher à notre guise dans le template.

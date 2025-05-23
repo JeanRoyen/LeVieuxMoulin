@@ -1,9 +1,6 @@
 @import "../settings/variables";
 
-
 .life {
-  padding-top: 8rem;
-
   h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -12,8 +9,57 @@
     font-weight: 700;
   }
 
+  .section_container_gallery {
+    background-color: $bg-tern-green;
+  }
+
+  .where {
+    background-color: $bg-tern-green;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .where__map {
+      width: 80%;
+      margin: auto;
+
+      iframe {
+        width: 100%;
+        border-radius: $radius;
+      }
+    }
+  }
+
+  .nav {
+    background-color: $bg-green;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    ul {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+
+      li {
+        margin-top: 1rem;
+
+        a {
+          text-decoration: none;
+          padding: 1.5rem;
+          background-color: $cta-green;
+          color: $text-dark;
+          font-weight: bold;
+          border-radius: 999px;
+
+          &:hover {
+            background-color: darken($cta-green, 10%);
+          }
+        }
+      }
+    }
+  }
+
   .section_container:first-of-type {
-    padding: 8rem 1.5rem 3rem 1.5rem;
+    padding: 2rem 1.5rem 3rem 1.5rem;
     background-color: $bg-light-green;
     text-align: center;
 
@@ -22,7 +68,7 @@
       max-width: 800px;
 
       .text-media__content-headline {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
         color: $text-dark;
         font-weight: bold;
@@ -68,20 +114,7 @@
         height: auto;
       }
     }
-
-    @media (min-width: 768px) {
-      padding: 8rem 3rem 4rem 3rem;
-
-      .text-media__content-container {
-        .text-media__content-text {
-          width: 60%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
   }
-
 
   .section_container_gallery {
     padding: 2rem 1.5rem;
@@ -92,6 +125,41 @@
       margin-bottom: 1.5rem;
       color: $primary-color;
       font-weight: bold;
+    }
+  }
+}
+
+// =======================
+// Media Queries
+// =======================
+@media (max-width: 768px) {
+  .life {
+    .nav {
+      ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .life {
+    .section_container:first-of-type {
+      padding: 8rem 3rem 4rem 3rem;
+    }
+
+    .nav {
+      padding-top: 8rem;
+    }
+
+    .text-media__content-container {
+      .text-media__content-text {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }

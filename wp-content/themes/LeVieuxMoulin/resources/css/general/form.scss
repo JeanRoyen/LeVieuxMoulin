@@ -1,0 +1,142 @@
+@import "../settings/variables";
+
+
+main {
+  background-color: $bg-light-green;
+}
+
+.contact {
+  padding-bottom: 3rem;
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+    font-weight: bold;
+    padding-top: 2rem;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 8rem;
+    }
+  }
+
+  .contact {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__content {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: $text-dark;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    &__form {
+      background-color: $white;
+      padding: 2rem 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    &__success {
+      padding: 1rem;
+      color: $text-dark;
+      text-align: center;
+      font-weight: bold;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__fields {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__group-inline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+
+        .field {
+          flex: 1;
+        }
+      }
+    }
+
+    &__submit {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__label {
+      font-weight: bold;
+      color: $text-dark;
+    }
+
+    &__input {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid $text-dark;
+      background: white;
+      font-size: 1rem;
+      color: $text-dark;
+      transition: border-color 0.2s;
+
+      &:focus {
+        outline: none;
+        border-color: $bg-green;
+      }
+    }
+
+    textarea.field__input {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    &__error {
+      font-size: 0.9rem;
+      color: red;
+    }
+  }
+
+  .btn {
+    background-color: $text-dark;
+    color: $white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($text-dark, 10%);
+    }
+  }
+}

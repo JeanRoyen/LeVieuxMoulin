@@ -1,12 +1,12 @@
 <?php /* Template Name: Template Contact */ ?>
 <?php get_header(); ?>
-    <h2>Me contacter</h2>
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
 if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
+        <h2>Me contacter</h2>
         <div class="contact__content">
             <?php the_content(); ?>
         </div>
@@ -57,7 +57,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                         </div>
                         <div class="field">
                             <label for="message" class="field__label">Message</label>
-                            <textarea name="message" id="message" class="field__input" placeholder="Mon message"></textarea>
+                            <textarea name="message" id="message" class="field__input" placeholder="Mon message" rows="25"></textarea>
                             <?php if(isset($errors['message'])): ?>
                                 <p class="field__error"><?= $errors['message']; ?></p>
                             <?php endif; ?>

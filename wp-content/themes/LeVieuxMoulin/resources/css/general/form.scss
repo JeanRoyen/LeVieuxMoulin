@@ -2,7 +2,7 @@
 
 
 main {
-  background-color: $bg-light-green;
+  background-color: $bg-tern-green;
 }
 
 .contact {
@@ -108,7 +108,6 @@ main {
       transition: border-color 0.2s;
 
       &:focus {
-        outline: none;
         border-color: $bg-green;
       }
     }

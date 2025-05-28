@@ -1,0 +1,72 @@
+@import '../settings/variables';
+
+.projects {
+  background-color: $bg-green;
+
+  .cards__container {
+    .section_container_description {
+      p {
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  .div_container_section {
+    background-color: $white;
+    margin: 0 3rem 3rem 3rem;
+    padding: 3rem;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    text-align: center;
+    line-height: 1.5rem;
+    min-width: 200px;
+
+    .div_project_text {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: $cta-green;
+      color: $white;
+      font-weight: bold;
+      padding: .75rem 2rem .75rem 1.75rem;
+      border-radius: 999px;
+
+      &:before {
+        content: '♥';
+        padding-right: .5rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .cards__container:first-of-type {
+      padding: 8rem 3rem 4rem 3rem;
+    }
+
+    .cards__container {
+      .cards__flex {
+        .card {
+          .div_project_h2 {
+            font-size: 2rem;
+          }
+
+          .card__description {
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+

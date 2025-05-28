@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-    <div class="news">
+    <div class="projects">
         <?php include('templates/content/flexible.php') ?>
     </div>
 

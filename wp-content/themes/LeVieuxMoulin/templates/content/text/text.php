@@ -10,16 +10,16 @@
                 <?= $headline ?>
             </h2>
         <?php endif; ?>
-        <div class="parcours_card">
+        <div class="div_project">
             <?php if ($text !== '' && isset($text)): ?>
-            <div class="div_project_text">
-                <?= $text ?>
-            </div>
+                <div class="div_project_text">
+                    <?= $text ?>
+                </div>
+            <?php endif; ?>
+            <?php if (!empty($link)): ?>
+                <a href="<?= $link['url'] ?>" target="<?= $link['target'] ?>"
+                   title="<?= $link['title'] ?>"><?= $link['title'] ?></a>
+            <?php endif; ?>
         </div>
-    <?php endif; ?>
-        <?php if (!empty($link)): ?>
-            <a href="<?= $link['url'] ?>" target="<?= $link['target'] ?>"
-               title="<?= $link['title'] ?>"><?= $link['title'] ?></a>
-        <?php endif; ?>
     </section>
 </div>

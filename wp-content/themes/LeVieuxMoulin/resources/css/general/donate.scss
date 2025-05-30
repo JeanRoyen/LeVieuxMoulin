@@ -31,6 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-radius: $radius;
     box-shadow: $shadow;
@@ -38,7 +39,6 @@
   }
 
   .text-media__image {
-    margin-bottom: 2rem;
     margin-top: 1rem;
     width: 65%;
     height: auto;

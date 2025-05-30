@@ -13,22 +13,6 @@
     background-color: $bg-tern-green;
   }
 
-  .where {
-    background-color: $bg-tern-green;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    .where__map {
-      width: 80%;
-      margin: auto;
-
-      iframe {
-        width: 100%;
-        border-radius: $radius;
-      }
-    }
-  }
-
   .nav {
     background-color: $bg-green;
     padding-top: 2rem;

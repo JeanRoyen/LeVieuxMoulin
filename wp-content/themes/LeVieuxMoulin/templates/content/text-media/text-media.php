@@ -9,6 +9,8 @@
 
 
 <section class="section_container <?= $class !== '' ? $class : '' ?>">
+    <div class="div_container">
+
     <div class="text-media__content-container">
         <?php if ($supline !== '' && isset($supline)): ?>
             <p class="text-media__content-supline">
@@ -45,4 +47,6 @@
             <?= responsive_image($image, ['classes' => 'text-media__image', 'lazy' => 'lazy']) ?>
         </div>
     <?php endif; ?>
+    </div>
+
 </section>

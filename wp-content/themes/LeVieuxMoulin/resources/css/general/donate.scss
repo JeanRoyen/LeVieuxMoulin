@@ -1,0 +1,61 @@
+@import "../settings/variables";
+
+
+.donate {
+line-height: 1.5rem;
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  .section_container:first-of-type {
+    padding-top: 2rem;
+  }
+
+  .section_container, .cards__container {
+    margin: auto;
+    text-align: center;
+  }
+
+  .section_container_description {
+    margin-bottom: 1rem;
+  }
+
+  .card__description {
+    margin-bottom: 1rem;
+  }
+
+  .div_container {
+    background-color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    color: $text-dark;
+  }
+
+  .text-media__image {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 65%;
+    height: auto;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    min-width: 150px;
+    max-width: 600px;
+  }
+
+
+
+  @media (min-width: 768px) {
+    .section_container:first-of-type {
+      padding-top: 8rem;
+    }
+  }
+}

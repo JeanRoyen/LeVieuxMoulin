@@ -14,11 +14,15 @@
 
   // === Section container dernier ===
   .section_container:last-of-type {
-    padding: 2rem 1.5rem 3rem 5rem;
+    padding: 3rem;
     position: relative;
     background-color: $bg-tern-green;
     display: flex;
     justify-content: space-between;
+
+    .div_container {
+      margin: 0 auto;
+    }
 
     .text-media__content-container {
 
@@ -61,9 +65,15 @@
 
   // === TITRE (juste première section) ===
   .section_container:first-of-type {
-    padding-top: 8rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
     background-color: $bg-light-green;
+
+    .div_container {
+      background-color: $bg-light-green;
+      box-shadow: none;
+      padding: 0;
+    }
 
     .text-media__content-container {
       text-align: center;
@@ -126,5 +136,11 @@
     margin: 0 auto 2rem;
     max-width: 600px;
     color: $text-dark;
+  }
+
+  @media (min-width: 768px) {
+    .section_container:first-of-type {
+      padding-top: 8rem;
+    }
   }
 }

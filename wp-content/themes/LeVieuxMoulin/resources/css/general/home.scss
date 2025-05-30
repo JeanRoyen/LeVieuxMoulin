@@ -3,6 +3,15 @@
 .home {
   line-height: 1.5rem;
 
+  .div_container {
+    background-color: $white;
+    display: flex;
+    padding: 2rem;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    flex-direction: column;
+  }
+
   // === Section container dernier ===
   .section_container:last-of-type {
     padding: 2rem 1.5rem 3rem 5rem;

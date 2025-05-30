@@ -2,17 +2,14 @@
 
 
 .donate {
-line-height: 1.5rem;
+  line-height: 1.5rem;
+
   h2 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
     color: $primary-color;
     font-weight: 700;
-  }
-
-  .section_container:first-of-type {
-    padding-top: 2rem;
   }
 
   .section_container, .cards__container {
@@ -48,14 +45,26 @@ line-height: 1.5rem;
     border-radius: $radius;
     box-shadow: $shadow;
     min-width: 150px;
-    max-width: 600px;
+    max-width: 500px;
   }
 
-
+  .section_container:first-of-type {
+    .text-media__image {
+      display: none;
+    }
+  }
 
   @media (min-width: 768px) {
     .section_container:first-of-type {
       padding-top: 8rem;
+    }
+    .section_container:first-of-type {
+      .text-media__image {
+        display: initial;
+        width: 25%;
+        min-width: 150px;
+        max-width: 300px;
+      }
     }
   }
 }

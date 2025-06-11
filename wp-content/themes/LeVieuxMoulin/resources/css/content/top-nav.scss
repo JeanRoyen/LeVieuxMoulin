@@ -1,6 +1,11 @@
 @import "../settings/variables";
 
 header {
+  height: 80px;
+
+  @media screen and (min-width: 1015px) {
+    height: 0;
+  }
 
   .burger__checkbox {
     position: absolute;

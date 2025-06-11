@@ -16,19 +16,19 @@
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: $primary-color;
     font-weight: 700;
   }
 
   .div_container_section {
     background-color: $white;
-    margin: 0 3rem 3rem 3rem;
+    margin: 0 auto 3rem auto;
     padding: 3rem;
     border-radius: $radius;
     box-shadow: $shadow;
     text-align: center;
     line-height: 1.5rem;
     min-width: 200px;
+    max-width: 1000px;
 
     .div_project_text {
       margin-bottom: 1.5rem;
@@ -37,10 +37,13 @@
     a {
       text-decoration: none;
       background-color: $cta-green;
-      color: $white;
       font-weight: bold;
       padding: .75rem 2rem .75rem 1.75rem;
       border-radius: 999px;
+
+      &:hover {
+        background-color: darken($cta-green, 10%);
+      }
 
       &:before {
         content: '♥';

@@ -5,7 +5,6 @@
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #1a4d2e;
     font-weight: 700;
   }
 
@@ -30,7 +29,6 @@
           text-decoration: none;
           padding: 1rem 2rem;
           background-color: $cta-green;
-          color: $text-dark;
           font-weight: bold;
           border-radius: 999px;
 
@@ -54,14 +52,12 @@
       .text-media__content-headline {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
-        color: $text-dark;
         font-weight: bold;
       }
 
       .text-media__content-text {
         font-size: 1rem;
         line-height: 1.6;
-        color: $text-dark;
         margin-bottom: 2rem;
 
         p:first-of-type {
@@ -71,7 +67,6 @@
 
       .text-media__content-link {
         background-color: $primary-color;
-        color: $white;
         padding: 1rem 2rem;
         border-radius: 9999px;
         text-decoration: none;
@@ -79,7 +74,7 @@
         font-weight: bold;
 
         &:hover {
-          background-color: darken($primary-color, 8%);
+          background-color: darken($text-dark, 8%);
         }
       }
     }
@@ -108,7 +103,6 @@
       font-size: 1.5rem;
       text-align: center;
       margin-bottom: 1.5rem;
-      color: $primary-color;
       font-weight: bold;
     }
   }

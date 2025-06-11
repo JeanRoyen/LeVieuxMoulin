@@ -3,7 +3,6 @@
 footer {
   display: flex;
   background-color: $bg-cream;
-  color: $text-brown;
   justify-content: space-around;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -42,6 +41,5 @@ footer {
 
 .nav__footer__items {
   text-decoration: none;
-  color: $text-brown;
   font-weight: bold;
 }

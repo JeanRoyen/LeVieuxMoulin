@@ -1,8 +1,12 @@
 {
   "wp-content/themes/LeVieuxMoulin/resources/css/styles.scss": {
-    "file": "assets/css-CnXB8xLV.css",
+    "file": "assets/css-DkGwj_yt.css",
     "src": "wp-content/themes/LeVieuxMoulin/resources/css/styles.scss",
     "isEntry": true
+  },
+  "wp-content/themes/LeVieuxMoulin/resources/font/Roboto.ttf": {
+    "file": "assets/Roboto-WOy3sDCz.ttf",
+    "src": "wp-content/themes/LeVieuxMoulin/resources/font/Roboto.ttf"
   },
   "wp-content/themes/LeVieuxMoulin/resources/js/main.js": {
     "file": "assets/js-l0sNRNKZ.js",

@@ -69,7 +69,14 @@
       .card__cta-link {
         text-decoration: none;
         color: $white;
-        padding: .5rem 6rem;
+        padding: 0.5rem 6rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
     }
 

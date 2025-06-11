@@ -98,7 +98,7 @@ header {
   }
 
   /* --- Desktop version --- */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1015px) {
 
     .nav__container li:last-child .nav__link {
       color: $text-dark;

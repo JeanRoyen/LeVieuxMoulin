@@ -16,7 +16,7 @@ main {
     font-weight: bold;
     padding-top: 2rem;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1015pxpx) {
       padding-top: 8rem;
     }
   }
@@ -73,7 +73,7 @@ main {
       flex-direction: column;
       gap: 1rem;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1015pxpx) {
         flex-direction: row;
 
         .field {

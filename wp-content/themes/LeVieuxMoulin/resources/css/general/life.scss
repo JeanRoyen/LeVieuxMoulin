@@ -117,7 +117,7 @@
 // =======================
 // Media Queries
 // =======================
-@media (max-width: 768px) {
+@media (max-width: 1015px) {
   .life {
     .nav {
       ul {
@@ -129,7 +129,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1015px) {
   .life {
     .section_container:first-of-type {
       padding: 2rem 3rem 4rem 3rem;

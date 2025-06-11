@@ -17,3 +17,11 @@
 @use 'general/projects';
 @use 'general/donate';
 @use 'general/about';
+@use 'general/general';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../font/roboto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

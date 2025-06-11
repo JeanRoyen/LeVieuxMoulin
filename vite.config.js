@@ -4,6 +4,8 @@ import * as fs from "fs";
 
 export default defineConfig({
   base: "/wp-content/themes/LeVieuxMoulin/public/",
+  assetsInclude: [
+  '**/*.ttf'],
   plugins: [
     {
       name: "bundle.js",

@@ -24,18 +24,17 @@
                     </div>
                 <?php endif; ?>
                 <?php if (!empty($ex['image'])): ?>
-                <div class="card_img">
-                    <?= responsive_image($ex['image'], ['classes' => 'card__img']) ?>
-                </div>
+                    <div class="card_img">
+                        <?= responsive_image($ex['image'], ['classes' => 'card__img']) ?>
+                    </div>
                 <?php endif; ?>
                 <?php if (!empty($ex['cta'])): ?>
-                <div class="card__cta">
-                    <a href="<?= esc_url($ex['cta']['url']) ?>"
-                       class="card__cta-link"
-                       target="<?= esc_attr($ex['cta']['target']) ?>">
-                        <?= esc_html($ex['cta']['title']) ?>
-                    </a>
-                </div>
+                    <div class="card__cta">
+                        <a href="<?= esc_url($ex['cta']['url']) ?>"
+                           class="card__cta-link">
+                            <?= esc_html($ex['cta']['title']) ?>
+                        </a>
+                    </div>
                 <?php endif; ?>
             </article>
         <?php endforeach; ?>

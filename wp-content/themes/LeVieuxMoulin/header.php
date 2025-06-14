@@ -14,6 +14,7 @@
     <h1 class="sro"><?= get_bloginfo('name') ?></h1>
     <input type="checkbox" id="menu-toggle" class="burger__checkbox" />
     <label for="menu-toggle" class="burger__button">
+        <span class="sro">Ouvrir ou fermer le menu</span>
         <span class="burger__icon"></span>
     </label>
 

@@ -1,4 +1,3 @@
-
 </main>
 <footer>
     <?php wp_footer(); ?>
@@ -37,8 +36,8 @@
                 <li><a class="nav__footer__items" href="<?= esc_url($link->href) ?>">
                         <?= esc_html($link->label) ?>
                     </a></li>
-
             <?php endforeach; ?>
+        </ul>
     </nav>
 
 </footer>

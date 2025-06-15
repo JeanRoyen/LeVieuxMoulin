@@ -21,3 +21,6 @@ Développement d’un site vitrine pour la structure d’accueil "Le Vieux Mouli
 Mettre en ligne un site clair, chaleureux et facilement modifiable par le client.
 
 ---
+
+Liens vers le Figma : https://www.figma.com/design/sySYEP9jWtZ6faKad5mkND/Le-vieux-moulin-ABSL?node-id=0-1&t=rOR3kb97TdwosvSP-1
+
